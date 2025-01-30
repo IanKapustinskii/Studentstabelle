@@ -1,0 +1,105 @@
+/* Стили для формы */
+#students-form {
+    max-width: 600px; /* Ограничиваем ширину формы */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+    padding: 20px; /* Добавляем отступы внутри формы */
+    background-color: #f8f9fa; /* Легкий фон для формы */
+    border-radius: 8px; /* Закругляем углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для формы */
+  }
+  
+  /* Стили для инпутов */
+  #students-form .form-control {
+    width: 100%; /* Инпуты занимают всю ширину формы */
+    margin-bottom: 15px; /* Отступ между инпутами */
+    padding: 8px 12px; /* Внутренние отступы для инпутов */
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    border: 1px solid #ced4da; /* Граница инпутов */
+    border-radius: 4px; /* Закругляем углы инпутов */
+  }
+  
+  /* Стили для кнопки */
+  #students-form .btn {
+    width: 100%; /* Кнопка занимает всю ширину формы */
+    padding: 10px; /* Внутренние отступы для кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border-radius: 4px; /* Закругляем углы кнопки */
+  }
+  
+  /* Размещение нескольких инпутов в одном ряду */
+  #students-form .row {
+    display: flex; /* Используем flexbox для размещения в ряд */
+    gap: 15px; /* Отступ между инпутами в ряду */
+  }
+  
+  #students-form .row .mb-3 {
+    flex: 1; /* Инпуты занимают равное пространство */
+  }
+  
+  /* Уменьшаем отступы для заголовка формы */
+  #students-form h2 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    font-size: 24px; /* Размер шрифта заголовка */
+    text-align: center; /* Центрируем заголовок */
+  }
+  
+  #students-form h2.mb-4 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    font-size: 24px; /* Размер шрифта заголовка */
+    text-align: center; /* Центрируем заголовок */
+    width: 100%; /* Заголовок занимает всю ширину */
+  }
+  
+  /* Стили для таблицы */
+  #studentsTable {
+    margin-top: 2rem; /* Отступ сверху */
+    margin-bottom: 2rem; /* Отступ снизу */
+  }
+  
+  .table thead th {
+    cursor: pointer;
+  }
+  
+  .allert {
+    color: red;
+    margin-left: 10px;
+  }
+  
+  .popup {
+    position: fixed;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .popup.hide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .sort-arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+  
+  .sort-arrow.asc {
+    transform: rotate(-135deg); /* Поворот стрелки вверх */
+  }
+  
+  .sort-arrow.desc {
+    transform: rotate(45deg); /* Поворот стрелки вниз */
+  }
+  
